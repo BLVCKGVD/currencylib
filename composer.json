@@ -1,7 +1,7 @@
 {
     "name": "blvckgvd/currencylib",
     "description": "PHP library to convert one currency to another",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "type": "library",
     "autoload": {
