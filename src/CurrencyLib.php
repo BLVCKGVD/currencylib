@@ -9,6 +9,9 @@ class CurrencyLib
 
     public static function convert($from, $to, $value, $offset = 10)
     {
+        if (!array_key_exists($from, self::symbolsMap()) or !array_key_exists($to, self::symbolsMap())) {
+            return null;
+        }
         $xml = simplexml_load_string(file_get_contents(self::host));
         if ($from == 'RUB') {
             if ($to == 'RUB') { return $value; }
@@ -37,6 +40,9 @@ class CurrencyLib
     }
 
     public static function convertWithCurrencySymbol($from, $to, $value, $offset = 10) {
+        if (!array_key_exists($from, self::symbolsMap()) or !array_key_exists($to, self::symbolsMap())) {
+            return null;
+        }
         return self::convert($from,$to,$value,$offset) . " " . self::getCurrencySymbol($to);
     }
 
