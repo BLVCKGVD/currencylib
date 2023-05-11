@@ -7,7 +7,7 @@ Light weight library to convert currencies with offset
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-![PHP](https://badgen.net/badge/php/">=5.6"/blue)
+![PHP](https://badgen.net/badge/php/">=7.4"/blue)
 
 ![ext-simplexml](https://badgen.net/badge/ext-simplexml/"*"/green)
 
