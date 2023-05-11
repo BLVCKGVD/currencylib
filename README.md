@@ -1,7 +1,7 @@
 
 # currencylib
 
-Light weight library to convert currencies
+Light weight library to convert currencies with offset
 
 
 
@@ -23,15 +23,35 @@ Install currencylib with composer
 ```
     
 ## Usage/Examples
-
+### Just Convert
 ```php
 use Blvckgvd\Currencylib\CurrencyLib;
 
 public function convertPrice() {
-  $price = CurrencyLib::convert('USD', 'EUR', 350);
+  $price = CurrencyLib::convert('USD', 'EUR', 350, 2);
   return $price;
 }
 // Converted from US Dollars to Euros number
+```
+### Convert with currency symbol
+```php
+use Blvckgvd\Currencylib\CurrencyLib;
+
+public function convertPriceWithSymbol() {
+  $price = CurrencyLib::convertWithCurrencySymbol('USD', 'EUR', 350, 2);
+  return $price;
+}
+// Converted from US Dollars to Euros number with symbol €
+```
+### Get Currency symbol
+```php
+use Blvckgvd\Currencylib\CurrencyLib;
+
+public function getSymbol() {
+  $symbol = CurrencyLib::getCurrencySymbol('JPY');
+  return $symbol;
+}
+// Get symbol from currency code, at this situation you'll get ¥
 ```
 
 
