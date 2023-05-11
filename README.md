@@ -3,7 +3,7 @@
 
 Light weight library to convert currencies with offset
 
-
+[![PHP Composer](https://github.com/BLVCKGVD/currencylib/actions/workflows/php.yml/badge.svg)](https://github.com/BLVCKGVD/currencylib/actions/workflows/php.yml)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
