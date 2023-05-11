@@ -37,7 +37,7 @@ class CurrencyLib
     }
 
     public static function convertWithCurrencySymbol($from, $to, $value, $offset = 10) {
-        return self::convert($from,$to,$value,2) . " " . self::getCurrencySymbol($to);
+        return self::convert($from,$to,$value,$offset) . " " . self::getCurrencySymbol($to);
     }
 
     public static function getCurrencySymbol($currency) {
