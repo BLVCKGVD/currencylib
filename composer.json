@@ -1,0 +1,21 @@
+{
+    "name": "blvckgvd/currencylib",
+    "description": "PHP library to convert one currency to another",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Blvckgvd\\Currencylib\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Антон Шульженко",
+            "email": "antondead1337@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ext-http": "*",
+        "ext-simplexml": "*"
+    }
+}
