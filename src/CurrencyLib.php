@@ -5,7 +5,6 @@ namespace Blvckgvd\Currencylib;
 
 class CurrencyLib
 {
-
     const host = 'https://www.cbr.ru/scripts/XML_daily.asp';
 
     public static function convert($from, $to, $value)
@@ -34,5 +33,4 @@ class CurrencyLib
         }
         return null;
     }
-
 }
