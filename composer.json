@@ -15,7 +15,6 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "ext-http": "*",
         "ext-simplexml": "*"
     }
 }
