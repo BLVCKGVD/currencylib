@@ -11,7 +11,7 @@ Light weight library to convert currencies
 
 ![ext-simplexml](https://badgen.net/badge/ext-simplexml/*/green)
 
-![Made By](https://badgen.net/badge/author/blvckgvd(Anton-Shulzhenko)/green)
+![Made By](https://badgen.net/badge/author/blvckgvd(Anton-Shulzhenko)/red)
 
 
 ## Installation
