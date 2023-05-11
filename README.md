@@ -7,9 +7,9 @@ Light weight library to convert currencies
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-![PHP](https://badgen.net/badge/php/>=5.6/blue)
+![PHP](https://badgen.net/badge/php/">=5.6"/blue)
 
-![ext-simplexml](https://badgen.net/badge/ext-simplexml/*/green)
+![ext-simplexml](https://badgen.net/badge/ext-simplexml/"*"/green)
 
 ![Made By](https://badgen.net/badge/author/blvckgvd(Anton-Shulzhenko)/red)
 
@@ -31,6 +31,7 @@ public function convertPrice() {
   $price = CurrencyLib::convert('USD', 'EUR', 350);
   return $price;
 }
+// Converted from US Dollars to Euros number
 ```
 
 
@@ -75,6 +76,7 @@ public function convertPrice() {
 - CZK
 - SEK
 - CHF
+- RUB
 - RSD
 - ZAR
 - KRW

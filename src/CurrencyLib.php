@@ -11,6 +11,7 @@ class CurrencyLib
     {
         $xml = simplexml_load_string(file_get_contents(self::host));
         if ($from == 'RUB') {
+            if ($to == 'RUB') { return $value; }
             foreach ($xml as $item) {
                 if ($item->CharCode == $to) {
                     return $value / $item->Value;
@@ -20,6 +21,7 @@ class CurrencyLib
         if ($from != 'RUB') {
             $fromCurrency = 0;
             $toCurrency = 0;
+            if ($to == 'RUB') { $toCurrency = 1; }
             foreach ($xml as $item) {
                 if ($item->CharCode == $from) {
                     $fromCurrency =  $item->Value;
