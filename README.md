@@ -27,7 +27,7 @@ Install currencylib with composer
 ```php
 use Blvckgvd\Currencylib\CurrencyLib;
 
-public function convertPrice($value) {
+public function convertPrice() {
   $price = CurrencyLib::convert('USD', 'EUR', 350);
   return $price;
 }
